@@ -25,6 +25,7 @@ import plotly.express as px
 from plotly.offline import plot
 
 DB_VAR=os.environ.get('HEROKU_POSTGRESQL_PINK_URL', None)
+OUT_DB_VAR=os.environ.get('DATABASE_URL', None)
 
 app = Flask(__name__)
 
@@ -38,7 +39,7 @@ Bootstrap(app)
 
 app.config['SQLALCHEMY_BINDS'] = {
     "db1":DB_VAR,
-    "db2":'postgres://fdpilcaempyzag:2734408960e164b36d221f4aba1c6366a8aae1746e75f3b44f0a7e2dd5c62476@ec2-54-170-100-209.eu-west-1.compute.amazonaws.com:5432/d458bntp094mai'}
+    "db2":OUT_DB_VAR}
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
@@ -77,7 +78,7 @@ class Emissions(db.Model):
         self.updated = updated    
         
 engine_local = create_engine(DB_VAR)
-engine_super =create_engine('postgres://fdpilcaempyzag:2734408960e164b36d221f4aba1c6366a8aae1746e75f3b44f0a7e2dd5c62476@ec2-54-170-100-209.eu-west-1.compute.amazonaws.com:5432/d458bntp094mai')
+engine_super =create_engine(OUT_DB_VAR)
 
 
 ### SupeUser DB
