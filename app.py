@@ -85,6 +85,7 @@ class SuperUser(UserMixin,db.Model):
     id = db.Column(db.Integer, primary_key=True)
     user_name= db.Column(db.Integer)
     password = db.Column(db.String)
+    group_name= db.Column(db.String)
 
     def __init__(self, user_name):
         self.user_name= user_name
@@ -210,8 +211,6 @@ efch4={"Bus":{"Diesel":2e-5,"CNG":2.5e-3,"Petrol":2e-5,"No Fossil Fuel":0},
        "Walk":{"No Fossil Fuel":0}}
 
 #+++++++++++++++++++++++
-#Group
-group_dict={"gab":"group1"}
 
 # small form
 class DeleteForm(FlaskForm):
@@ -329,14 +328,17 @@ def add_record():
             co2=float(kms)*float(gas) 
             ch4=float(kms)*efch4[transport][fuel]
             
-        user_rec=SuperUser.query.filter_by(id=current_user.user_name).first().user_name
+        user=SuperUser.query.filter_by(id=current_user.user_name).first()
+        
+        user_rec=user.user_name
+        group_rec=user.group_name
         
         # the data to be inserted into Emission model - the table, records
         record = Emissions(kms, transport, fuel, date, co2, ch4, user_rec, updated)
         
         backup= SuperBackUp(kms, transport, fuel, date, co2, ch4, user_rec, updated)
         
-        global_db= SuperGlobal(kms, transport, fuel, date, co2, ch4, user_rec, updated, group_dict[user_rec])
+        global_db= SuperGlobal(kms, transport, fuel, date, co2, ch4, user_rec, updated, group_rec)
         
         # Flask-SQLAlchemy magic adds record to database
         db.session.add(record)
