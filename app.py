@@ -26,6 +26,7 @@ from plotly.offline import plot
 
 DB_VAR=os.environ.get('HEROKU_POSTGRESQL_PINK_URL', None)
 OUT_DB_VAR=os.environ.get('DATABASE_URL', None)
+GROUP_NAME=os.environ.get('GROUP_NAME', None)
 
 app = Flask(__name__)
 
@@ -245,7 +246,7 @@ def login():
         ##check user
         user=SuperUser.query.filter_by(user_name=formlog.user.data).first()
         
-        if user and formlog.password.data == user.password:
+        if user and formlog.password.data == user.password and GROUP_NAME==user.group_name:
             login_user(user)  
             return (redirect(url_for("index")))
         else:
