@@ -4,5 +4,5 @@ Emissions DB collector for ENE425
 <p>Emissison's App tasks </p>
 
 <br>
-<img src="notes/module_design.png">
+<img src="notes/module_design_v2.png">
 <br>
