@@ -3,7 +3,7 @@ Emissions DB collector for ENE425
 
 <p>Emissison's App tasks </p>
 
-
+<brZ
 ![alt_text](notes/module_design_v2.png)
-
+</br>
     
