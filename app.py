@@ -157,7 +157,7 @@ def before_first_request():
 class LoginRecord(FlaskForm):
     user= StringField("User",validators=[InputRequired()])
     
-    password = PasswordField('New Password', validators=[DataRequired()])
+    password = PasswordField('Password', validators=[DataRequired()])
         
     submit = SubmitField("Submit")
     
