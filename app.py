@@ -274,6 +274,7 @@ def index():
     global_emissions=global_emissions.reset_index()
     
     if global_emissions.shape[0]!=0:
+        global_emissions["date"]=global_emissions["date"].dt.date
         fig_global = px.line(global_emissions, x="date", y="co2", color='group_name',
                             labels={
                      "co2": "CO2 kg/passenger km",
@@ -295,6 +296,7 @@ def index():
         group_emissions=group_emissions.sort_values(by="date")
         group_emissions=group_emissions.groupby(["date","user_name"]).agg({"co2":sum})
         group_emissions=group_emissions.reset_index()
+        group_emissions["date"]=group_emissions["date"].dt.date
         
         fig = px.line(group_emissions, x="date", y="co2", color='user_name', 
                       labels={
