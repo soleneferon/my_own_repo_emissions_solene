@@ -246,7 +246,7 @@ def login():
         ##check user
         user=SuperUser.query.filter_by(user_name=formlog.user.data).first()
         
-        if user and formlog.password.data == user.password and GROUP_NAME.upper()==user.group_name().upper():
+        if user and formlog.password.data == user.password and GROUP_NAME==user.group_name():
             login_user(user)
             session.pop('_flashes', None) 
             return (redirect(url_for("index")))
