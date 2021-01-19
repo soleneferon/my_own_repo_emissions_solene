@@ -1,7 +1,10 @@
 # ENE425 Emissions App
 ### This is an app created for the course ENE425 of the Norwegian School of Economics. 
 
-Stores, edit and remove records of emissions per individuals and between groups. The development was carried under Flask-Python, wtforms, sqlalchemy an deployed in Heroku.
+Online App that stores, edit and remove records of emissions per individuals and between groups. 
+
+The development was carried under Flask-Python, wtforms, sqlalchemy an deployed in Heroku. 
+
 Records are dynamically updated in a Heroku PostgreSQL database.
 
 Input
