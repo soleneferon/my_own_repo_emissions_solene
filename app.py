@@ -503,7 +503,7 @@ def edit_result():
 def download():
     si = StringIO()
     
-    con=sqlite3.connect('emissions.db')
+    con=engine_local.connect()
     
     outcsv=csv.writer(si)
     
