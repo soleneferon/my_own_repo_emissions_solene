@@ -274,7 +274,14 @@ def index():
     global_emissions=global_emissions.reset_index()
     
     if global_emissions.shape[0]!=0:
-        fig_global = px.line(global_emissions, x="date", y="co2", color='group_name')
+        fig_global = px.line(global_emissions, x="date", y="co2", color='group_name',
+                            labels={
+                     "co2": "CO2 kg/passenger km",
+                     "date": "Date",
+                     "group_name": "Group Name"
+                 },
+                              title="Emissions per Group"))
+        
         fig_global.update_traces(mode='markers+lines')
         
         plot_div_global = plot(fig_global, output_type='div', include_plotlyjs=False)
@@ -289,7 +296,13 @@ def index():
         group_emissions=group_emissions.groupby(["date","user_name"]).agg({"co2":sum})
         group_emissions=group_emissions.reset_index()
         
-        fig = px.line(group_emissions, x="date", y="co2", color='user_name')
+        fig = px.line(group_emissions, x="date", y="co2", color='user_name', 
+                      labels={
+                     "co2": "CO2 kg/passenger km",
+                     "date": "Date",
+                     "user_name": "Name"
+                 },
+                     title="Emissions per Group Member")
         fig.update_traces(mode='markers+lines')
         plot_div = plot(fig, output_type='div', include_plotlyjs=False)
     
