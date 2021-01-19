@@ -296,7 +296,7 @@ def index():
         group_emissions=group_emissions.sort_values(by="date")
         group_emissions=group_emissions.groupby(["date","user_name"]).agg({"co2":sum})
         group_emissions=group_emissions.reset_index()
-        group_emissions["date"]=group_emissions["date"].dt.date
+        group_emissions["date"]=group_emissions["date"].dt.strftime('%Y-%m-%d %H:%M')
         
         fig = px.line(group_emissions, x="date", y="co2", color='user_name', 
                       labels={
