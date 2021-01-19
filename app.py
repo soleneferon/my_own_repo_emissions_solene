@@ -503,16 +503,15 @@ def edit_result():
 def download():
     si = StringIO()
     
-    con=engine_local.raw_connection()
-    
     outcsv=csv.writer(si)
     
-    cursor=con.cursor()
-    result= cursor.execute('select * from records')
+    con=engine_local.connect()
     
-    outcsv.writerow(x[0] for x in result.cursor.description)
+    result= con.execute('select * from records')
+    
+    outcsv.writerow(x for x in result._metadata.keys)
     # dump rows
-    outcsv.writerows(result.cursor.fetchall())
+    outcsv.writerows(row for row in result)
     
     mem = BytesIO()
     mem.write(si.getvalue().encode('utf-8'))
@@ -524,7 +523,6 @@ def download():
     
     return output
     
-    cursor.close()
     con.close()
     os.remove('emissions.csv')
     
