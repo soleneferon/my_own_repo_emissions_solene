@@ -280,7 +280,7 @@ def index():
                      "date": "Date",
                      "group_name": "Group Name"
                  },
-                              title="Emissions per Group"))
+                              title="Emissions per Group")
         
         fig_global.update_traces(mode='markers+lines')
         
