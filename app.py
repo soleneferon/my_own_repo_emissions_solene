@@ -48,7 +48,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 login_manager = LoginManager() 
 login_manager.init_app(app)
 login_manager.login_view = 'login'
-
+ 
 # this variable, db, will be used for all SQLAlchemy commands
 db = SQLAlchemy(app)
     
@@ -87,6 +87,7 @@ class SuperUser(UserMixin,db.Model):
     __tablename__ = 'users'
     __bind_key__= "db2"
     id = db.Column(db.Integer, primary_key=True)
+    student = db.Column(db.String)
     user_name= db.Column(db.Integer)
     password = db.Column(db.String)
     group_name= db.Column(db.String)
@@ -263,7 +264,7 @@ def login():
 @login_required
 def index():
     # get a list of unique values in the style column
-    user_rec=SuperUser.query.filter_by(id=current_user.user_name).first().user_name
+    user_rec=SuperUser.query.filter_by(id=current_user.user_name).first().student
     transport = Emissions.query.with_entities(Emissions.transport).distinct()
     
     ###Outer Plot
@@ -350,7 +351,7 @@ def add_record():
             
         user=SuperUser.query.filter_by(id=current_user.user_name).first()
         
-        user_rec=user.user_name
+        user_rec=user.student
         group_rec=user.group_name
         
         # the data to be inserted into Emission model - the table, records
