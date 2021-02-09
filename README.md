@@ -1,12 +1,11 @@
 # ENE425 Emissions Personal App
 Emissions DB collector for ENE425: [Emissions calculator](http://ene425.gabrielfuentes.org/login?next=%2F)
 
-## App Development Journal
+## Section 1: App Development Journal
 
 ### WEEK 5 - Task 1: Cloud environment
-_The App Developement set up the environment_
-_The Diary Team set up the README structure and project management setup_
-_The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
+_The App Developement set up the environment. The Diary Team set up the README structure and project management setup.
+The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
 
 I learned to:
 1. Set a cooperative codind environment and manage a project in GitHub
@@ -31,9 +30,9 @@ File Explorer > cmd > tree /a /f > tree.doc
 1. Create a new repository with the emissions app for my own account
 
 ### WEEK 7 - Task 3: App design
-_The app development team will dive into App Design this week as we start to learn the basics of customizing our Emissions Calculator, we will work on the colors, the text and the favicon inside app
-The diary Group will propose with pics and text in the repo diary what would we adjust design-wise of the app to make it look cooler
-The Methodology Group will keep adding the methods to the diary_
+_The app development team will dive into App Design this week as we start to learn the basics of customizing our Emissions Calculator, we will work on the colors, the text and the favicon inside app.
+The diary Group will propose with pics and text in the repo diary what would we adjust design-wise of the app to make it look cooler.
+The Methodology Group will keep adding the methods to the diary._
 
 I learned:
 1. How the design aligns with the code machinery in Flask
@@ -53,7 +52,26 @@ We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 ### WEEK 10 - Task 6: App URL Redirection
 
 
-## Directory Tree:
+## Section 2: Emissions Methodology
+
+### Within this section we are gathering information on emissions calculation method for transport sources:
+#### CO2 emissions data 1 (from Gabriel) 
+
+A basic understanding requires having a classification of transport as urban transport or industrial transport (e.g maritime, air).
+A more segregated classification of "vehicles" under EC standards can be found at this [link](https://www.eafo.eu/knowledge-center/european-vehicle-categories), which is connected to the last study of ["Determining the environmental impacts of conventional
+and alternatively fuelled vehicles through LCA"](https://ec.europa.eu/clima/sites/clima/files/transport/vehicles/docs/2020_study_main_report_en.pdf) by Ricardo Energy and Environment for the European Comission. Our observations o this study is that the segregation is practical for our purpouses, but the methodology is on a higher scale than what we are intending to do with the app (local direct emission per km rather than Life Cycle Analysis (LCA)).
+
+
+#### 2) Our World in Data
+
+[Here](https://ourworldindata.org/grapher/co2-transport-mode?tab=chart&stackMode=absolute&time=latest&country=Domestic%20flight~Eurostar%20(international%20rail)~Medium%20car%20(diesel)~Medium%20car%20(petrol)~Short-haul%20flight%20(economy)~Long-haul%20flight%20(economy)~Motorcycle%20(medium)~National%20rail~Bus~Small%20electric%20vehicle%20(UK%20electricity)&region=World)
+        Under link we can find CO₂ emissions (in grams per passenger kilometer) by mode of transport, 2018 based on data of UK Department for Business, Energy & Industrial Strategy (BEIS). Different modes of transport can be selected. This can serve as a basis, but can at best be supplemented by data for Norway or more up-to-date data.
+        
+#### 3) Global footprint Network
+[Here](https://www.footprintnetwork.org/resources/data/)
+        
+        
+## Section 3: Directory Tree
 
                 
                 +--- Emissions_App
@@ -76,17 +94,3 @@ We can find nice color mixes on this website: [Coolors](https://coolors.co/)
                         edit_or_delete.html
                         error.html
 
-## Emissions Methodology
-
-### Within this section we are gathering information on emissions calculation method for transport sources:
-#### CO2 emissions data 1 (from Gabriel) 
-
-A basic understanding requires having a classification of transport as urban transport or industrial transport (e.g maritime, air).
-A more segregated classification of "vehicles" under EC standards can be found at this [link](https://www.eafo.eu/knowledge-center/european-vehicle-categories), which is connected to the last study of ["Determining the environmental impacts of conventional
-and alternatively fuelled vehicles through LCA"](https://ec.europa.eu/clima/sites/clima/files/transport/vehicles/docs/2020_study_main_report_en.pdf) by Ricardo Energy and Environment for the European Comission. Our observations o this study is that the segregation is practical for our purpouses, but the methodology is on a higher scale than what we are intending to do with the app (local direct emission per km rather than Life Cycle Analysis (LCA)).
-
-
-#### CO2 emissions data 2 (found by another student)
-
-[Here](https://ourworldindata.org/grapher/co2-transport-mode?tab=chart&stackMode=absolute&time=latest&country=Domestic%20flight~Eurostar%20(international%20rail)~Medium%20car%20(diesel)~Medium%20car%20(petrol)~Short-haul%20flight%20(economy)~Long-haul%20flight%20(economy)~Motorcycle%20(medium)~National%20rail~Bus~Small%20electric%20vehicle%20(UK%20electricity)&region=World)
-        Under link we can find CO₂ emissions (in grams per passenger kilometer) by mode of transport, 2018 based on data of UK Department for Business, Energy & Industrial Strategy (BEIS). Different modes of transport can be selected. This can serve as a basis, but can at best be supplemented by data for Norway or more up-to-date data.
