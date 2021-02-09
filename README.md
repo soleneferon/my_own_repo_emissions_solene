@@ -4,9 +4,9 @@ Emissions DB collector for ENE425: [Emissions calculator](http://ene425.gabrielf
 ## App Development Journal
 
 ### WEEK 5 - Task 1: Cloud environment
-_The App Developement set up the environment
-The Diary Team set up the README structure and project management setup
-The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
+_The App Developement set up the environment_
+_The Diary Team set up the README structure and project management setup_
+_The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
 
 I learned to:
 1. Set a cooperative codind environment and manage a project in GitHub
@@ -41,9 +41,9 @@ I learned:
 1. How to change colors and text in my existing app design
 Colors standards for html
 * RGB. e.g. rgb(0,0,0) is black
-** A fourth digit stands for opacity rgb(R,G,B,a) a from 0.0 to 1.0
+  * A fourth digit stands for opacity rgb(R,G,B,a) a from 0.0 to 1.0
 * Hex #000000 is also black
-** Opacity in here goes with 2 additional digits at the end. e.g. 00 is 0% and FF is 100% #000000FF
+  * Opacity in here goes with 2 additional digits at the end. e.g. 00 is 0% and FF is 100% #000000FF
 We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 
 ### WEEK 8 - Task 4: App deployment
