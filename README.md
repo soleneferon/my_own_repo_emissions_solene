@@ -1,12 +1,12 @@
 # ENE425 Emissions Personal App
-Emissions DB collector for ENE425
+Emissions DB collector for ENE425: [Emissions calculator](http://ene425.gabrielfuentes.org/login?next=%2F)
 
 ## App Development Journal
 
-
-
 ### WEEK 5 - Task 1: Cloud environment
-_In Week 1 of development, we did our best to get everybody set up with Github and Heroku accounts as well as develop a group chat forum where we could stay connected and strategize around each week's tasks._
+_The App Developement set up the environment
+The Diary Team set up the README structure and project management setup
+The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
 
 I learned to:
 1. Set a cooperative codind environment and manage a project in GitHub
@@ -17,7 +17,9 @@ Syntax for README edit can be found in this link [Mastering Markdown](https://gu
 1. Create a DB to feed my app in real time
 
 ### WEEK 6 - Task 2: App Structure
-_This week, the app development team copied and uploaded repository files taken from Gabriel's example repository to structure our own repository. The team also created a directory tree for our repository that is located in this README file._
+_The App Development Team copied and uploaded repository files taken from Gabriel's example repository to structure our own repository. The team also created a directory tree for our repository that is located in this README file.
+The diary team updated on the project section and in the README file
+The Methodology team kept adding methods to the README file._
 
 I learned to:
 1. Upload files or copy files from a repository to my repository
@@ -29,7 +31,20 @@ File Explorer > cmd > tree /a /f > tree.doc
 1. Create a new repository with the emissions app for my own account
 
 ### WEEK 7 - Task 3: App design
-_The app dev team will dive into App Design this week as we start to learn the basics of customizing our Emissions Calculator_
+_The app development team will dive into App Design this week as we start to learn the basics of customizing our Emissions Calculator, we will work on the colors, the text and the favicon inside app
+The diary Group will propose with pics and text in the repo diary what would we adjust design-wise of the app to make it look cooler
+The Methodology Group will keep adding the methods to the diary_
+
+I learned:
+1. How the design aligns with the code machinery in Flask
+1. Different ways of editing my falsk app design
+1. How to change colors and text in my existing app design
+Colors standards for html
+* RGB. e.g. rgb(0,0,0) is black
+** A fourth digit stands for opacity rgb(R,G,B,a) a from 0.0 to 1.0
+* Hex #000000 is also black
+** Opacity in here goes with 2 additional digits at the end. e.g. 00 is 0% and FF is 100% #000000FF
+We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 
 ### WEEK 8 - Task 4: App deployment
 
