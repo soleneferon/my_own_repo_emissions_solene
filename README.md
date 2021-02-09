@@ -3,7 +3,9 @@ Emissions DB collector for ENE425
 
 ## App Development Journal
 
-# WEEK 5 - Task 1: Cloud environment
+
+
+### WEEK 5 - Task 1: Cloud environment
 In Week 1 of development, we did our best to get everybody set up with Github and Heroku accounts as well as develop a group chat forum where we could stay connected and strategize around each week's tasks.
 
 I learned to:
@@ -14,15 +16,25 @@ Syntax for README edit can be found in this link [Mastering Markdown](https://gu
 1. Deploy a cloud environment for running an app in Heroku
 1. Create a DB to feed my app in real time
 
-# WEEK 6 - Task 2: App Structure
+### WEEK 6 - Task 2: App Structure
+This week, the app development team copied and uploaded repository files taken from Gabriel's example repository to structure our own repository. The team also created a directory tree for our repository that is located in this README file.
 
-# WEEK 7 - Task 3: App design
+I learned to:
+1. Upload files or copy files from a repository to my repository
+I uploaded and copy the files from [Gabriel's repository](https://github.com/gabrielfuenmar/ene425_emissions_app)
+1. Read a directory tree from other developers
+1. Create a directory tree for my Emission's app
+File Explorer > cmd > tree /a /f > tree.doc
+1. Learn what is a fork in Github and what does it do
+1. Create a new repository with the emissions app for my own account
 
-# WEEK 8 - Task 4: App deployment
+### WEEK 7 - Task 3: App design
 
-# WEEK 9 - Task 5: Emissions calculation methodology (responsible diary)
+### WEEK 8 - Task 4: App deployment
 
-# WEEK 10 - Task 6: App URL Redirection
+### WEEK 9 - Task 5: Emissions calculation methodology (responsible diary)
+
+### WEEK 10 - Task 6: App URL Redirection
 
 
 ## Directory Tree:
