@@ -6,7 +6,7 @@ Emissions DB collector for ENE425
 
 
 ### WEEK 5 - Task 1: Cloud environment
-In Week 1 of development, we did our best to get everybody set up with Github and Heroku accounts as well as develop a group chat forum where we could stay connected and strategize around each week's tasks.
+_In Week 1 of development, we did our best to get everybody set up with Github and Heroku accounts as well as develop a group chat forum where we could stay connected and strategize around each week's tasks._
 
 I learned to:
 1. Set a cooperative codind environment and manage a project in GitHub
@@ -17,7 +17,7 @@ Syntax for README edit can be found in this link [Mastering Markdown](https://gu
 1. Create a DB to feed my app in real time
 
 ### WEEK 6 - Task 2: App Structure
-This week, the app development team copied and uploaded repository files taken from Gabriel's example repository to structure our own repository. The team also created a directory tree for our repository that is located in this README file.
+_This week, the app development team copied and uploaded repository files taken from Gabriel's example repository to structure our own repository. The team also created a directory tree for our repository that is located in this README file._
 
 I learned to:
 1. Upload files or copy files from a repository to my repository
@@ -29,6 +29,7 @@ File Explorer > cmd > tree /a /f > tree.doc
 1. Create a new repository with the emissions app for my own account
 
 ### WEEK 7 - Task 3: App design
+_The app dev team will dive into App Design this week as we start to learn the basics of customizing our Emissions Calculator_
 
 ### WEEK 8 - Task 4: App deployment
 
