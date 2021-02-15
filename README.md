@@ -8,7 +8,7 @@ _The App Developement set up the environment. The Diary Team set up the README s
 The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
 
 I learned to:
-1. Set a cooperative codind environment and manage a project in GitHub
+1. Set a cooperative coding environment and manage a project in GitHub
 1. Create my logbook/diary setting via README and the important syntax.
 Syntax for README edit can be found in this link [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 1. Recognize the most favorable License for my project
@@ -46,6 +46,21 @@ Colors standards for html
 We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 
 ### WEEK 8 - Task 4: App deployment
+_The app development team made the app running. The diary team updated the step to bring the app live and answered 2 questions:
+*What other cloud service can be used to deploy apps from github repositories?
+
+
+
+*What option would you consider to make your app safer against attacks (abusive requests that could crash your server, passford theft, ...)?
+
+
+
+I learned 
+1. To sync a database in Heroku
+1. To sync my Github repository with a cloud machinery
+1. To definie my environmental variables and use it as a first stage security measure
+We used a key to point directly to a hidden value. It is not the safest but the easiest (common practice)
+1. Heroku basic function
 
 ### WEEK 9 - Task 5: Emissions calculation methodology (responsible diary)
 
