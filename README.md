@@ -46,7 +46,10 @@ Colors standards for html
 We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 
 ### WEEK 8 - Task 4: App deployment
-_The app development team made the app running. The diary team updated the step to bring the app live and answered 2 questions:
+_The app development team made the app running. The diary team updated the step to bring the app live and answered 2 questions:_
+
+
+
 *What other cloud service can be used to deploy apps from github repositories?
 
 
