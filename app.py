@@ -24,7 +24,7 @@ from sqlalchemy import create_engine
 import plotly.express as px
 from plotly.offline import plot
 
-DB_VAR=os.environ.get('HEROKU_POSTGRESQL_PINK_URL', None)
+DB_VAR=os.environ.get('EXTERNAL_DB', None)
 OUT_DB_VAR=os.environ.get('DATABASE_URL', None)
 GROUP_NAME=os.environ.get('GROUP_NAME', None)
 
