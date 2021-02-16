@@ -1,11 +1,10 @@
-# ENE425 Emissions Personal App
+# ENE425 Emissions Personal App - MyCapture
+[Myapp](https://mycapture.herokuapp.com/)
 Emissions DB collector for ENE425: [Emissions calculator](http://ene425.gabrielfuentes.org/login?next=%2F)
 
 ## Section 1: App Development Journal
 
 ### WEEK 5 - Task 1: Cloud environment
-_The App Developement set up the environment. The Diary Team set up the README structure and project management setup.
-The Emissions methodology crew start identifying sources and uploaded to diary when accepted in GitHub environment._
 
 I learned to:
 1. Set a cooperative coding environment and manage a project in GitHub
@@ -16,9 +15,6 @@ Syntax for README edit can be found in this link [Mastering Markdown](https://gu
 1. Create a DB to feed my app in real time
 
 ### WEEK 6 - Task 2: App Structure
-_The App Development Team copied and uploaded repository files taken from Gabriel's example repository to structure our own repository. The team also created a directory tree for our repository that is located in this README file.
-The diary team updated on the project section and in the README file
-The Methodology team kept adding methods to the README file._
 
 I learned to:
 1. Upload files or copy files from a repository to my repository
@@ -30,9 +26,6 @@ File Explorer > cmd > tree /a /f > tree.doc
 1. Create a new repository with the emissions app for my own account
 
 ### WEEK 7 - Task 3: App design
-_The app development team will dive into App Design this week as we start to learn the basics of customizing our Emissions Calculator, we will work on the colors, the text and the favicon inside app.
-The diary Group will propose with pics and text in the repo diary what would we adjust design-wise of the app to make it look cooler.
-The Methodology Group will keep adding the methods to the diary._
 
 I learned:
 1. How the design aligns with the code machinery in Flask
@@ -46,9 +39,6 @@ Colors standards for html
 We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 
 ### WEEK 8 - Task 4: App deployment
-_The app development team made the app running. The diary team updated the step to bring the app live and answered 2 questions:_
-
-
 
 *What other cloud service can be used to deploy apps from github repositories?
 
