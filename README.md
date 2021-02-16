@@ -1,5 +1,6 @@
 # ENE425 Emissions Personal App - MyCapture
-[Myapp](https://mycapture.herokuapp.com/)
+My Personal App MyCapture [Link to the app](https://mycapture.herokuapp.com/)
+
 Emissions DB collector for ENE425: [Emissions calculator](http://ene425.gabrielfuentes.org/login?next=%2F)
 
 ## Section 1: App Development Journal
