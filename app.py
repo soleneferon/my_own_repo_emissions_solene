@@ -155,7 +155,7 @@ class SuperGlobal(db.Model):
 def before_first_request():
     db.create_all()
     
-su_existing=SuperUser.query.filter_by(student=NAME,user_name=USER_NAME,password=PASSWORD)
+su_existing=SuperUser.query.filter_by(student=NAME,user_name=USER_NAME,password=PASSWORD).first()
 
 if not su_existing:
     con_ext=engine_super.connect()
