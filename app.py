@@ -27,6 +27,9 @@ from plotly.offline import plot
 DB_VAR=os.environ.get('HEROKU_POSTGRESQL_PINK_URL', None)
 OUT_DB_VAR=os.environ.get('DATABASE_URL', None)
 GROUP_NAME=os.environ.get('GROUP_NAME', None)
+USER_NAME=os.environ.get('USER_NAME', None)
+PASSWORD=os.environ.get('PASSWORD', None)
+NAME=os.environ.get('NAME', None)
 
 app = Flask(__name__)
 
@@ -81,6 +84,18 @@ class Emissions(db.Model):
 engine_local = create_engine(DB_VAR)
 engine_super =create_engine(OUT_DB_VAR)
 
+####Add user name to SuperUser DB
+con_ext=engine_super.connect()
+con_ext.execute("""DROP TABLE IF EXISTS users""")
+con_ext.execute('''CREATE TABLE users(id serial PRIMARY KEY, 
+                                      student varchar , 
+                                      user_name varchar,
+                                      password varchar,
+                                      group_name varchar)''')
+con_ext.execute("""INSERT INTO users(student,user_name,password,group_name)
+                    VALUES('{}','{}','{}','{}')""".format(NAME,USER_NAME,PASSWORD,GROUP_NAME)) 
+
+con_ext.close()
 
 ### SupeUser DB
 class SuperUser(UserMixin,db.Model):
