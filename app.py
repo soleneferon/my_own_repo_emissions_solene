@@ -84,19 +84,6 @@ class Emissions(db.Model):
 engine_local = create_engine(DB_VAR)
 engine_super =create_engine(OUT_DB_VAR)
 
-####Add user name to SuperUser DB
-con_ext=engine_super.connect()
-con_ext.execute("""DROP TABLE IF EXISTS users""")
-con_ext.execute('''CREATE TABLE users(id serial PRIMARY KEY, 
-                                      student varchar , 
-                                      user_name varchar,
-                                      password varchar,
-                                      group_name varchar)''')
-con_ext.execute("""INSERT INTO users(student,user_name,password,group_name)
-                    VALUES('{}','{}','{}','{}')""".format(NAME,USER_NAME,PASSWORD,GROUP_NAME)) 
-
-con_ext.close()
-
 ### SupeUser DB
 class SuperUser(UserMixin,db.Model):
     __tablename__ = 'users'
@@ -167,6 +154,15 @@ class SuperGlobal(db.Model):
 @app.before_first_request
 def before_first_request():
     db.create_all()
+    
+su_existing=SuperUser.query.filter_by(student=NAME,user_name=USER_NAME,password=PASSWORD)
+
+if not su_existing:
+    con_ext=engine_super.connect()
+
+    con_ext.execute("""INSERT INTO users(student,user_name,password,group_name)
+                        VALUES('{}','{}','{}','{}')""".format(NAME,USER_NAME,PASSWORD,GROUP_NAME)) 
+    con_ext.close() 
 # +++++++++++++++++++++++
 # forms with Flask-WTF
 
