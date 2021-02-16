@@ -256,9 +256,9 @@ def login():
     
     if request.method =="POST" and formlog.validate_on_submit():
         ##check user
-        user=SuperUser.query.filter_by(user_name=formlog.user.data).first()
+        user=SuperUser.query.filter_by(user_name=formlog.user.data,password=formlog.password.data).first()
         
-        if user and formlog.password.data == user.password and GROUP_NAME==user.group_name:
+        if user:
             login_user(user)
             session.pop('_flashes', None) 
             return (redirect(url_for("index")))
