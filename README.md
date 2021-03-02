@@ -89,7 +89,13 @@ I learned
 
 I learned to 
 1. get a domain and a web host provider
+[Link](https://no.godaddy.com/) to see the different options and the prices
+Easier solution is to go on a webhost provider
+- Web host: you can create website from webhost, [Link](https://my.bluehost.com/web-hosting/cplogin)
+- Domain host: provide a domain name, URL, the specific name that end with .com and redirect the customer with easy name to a specific IP adress
+
 2. sync your app to your domain URL
+
         
 ## Section 2: Different methodologies to calculate CO2 emissions
 
