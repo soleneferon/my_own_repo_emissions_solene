@@ -40,15 +40,6 @@ Colors standards for html
 We can find nice color mixes on this website: [Coolors](https://coolors.co/)
 
 ### WEEK 8 - Task 4: App deployment
-
-*What other cloud service can be used to deploy apps from github repositories?
-
-
-
-*What option would you consider to make your app safer against attacks (abusive requests that could crash your server, passford theft, ...)?
-
-
-
 I learned 
 1. To sync a database in Heroku
 1. To sync my Github repository with a cloud machinery
@@ -56,10 +47,48 @@ I learned
 We used a key to point directly to a hidden value. It is not the safest but the easiest (common practice)
 1. Heroku basic function
 
+
+#### Week questions
+
+##### Question 1: What other cloud service can be used to deploy apps from github repositories?
+
+
+
+##### Question 2: What option would you consider to make your app safer against attacks (abusive requests that could crash your server, passford theft, ...)?
+
+
+
+
 ### WEEK 9 - Task 5: Emissions calculation methodology (responsible diary)
+I learned 
+
+1. Mathematical operators in Python
+2. Select methodology for my app
+3. Criteria for selecting a method that feeds an app
+
+#### Week questions
+
+##### Question 1: What other input values would you use to improve your calculations?
+
+1. Brand, age, size and weight of the mean of transport
+2. Number of passengers
+3. Car maintenance
+4. How it is driven (speed, idling, starting and stopping, acceleration, braking)
+5. Energy mix of specific country
+6. Connect the app to GPS services
+7. Include other greenhouse gasses in the calculators (“CO2 equivalents”)
+8. Include CO2 produced indirectly, for example during the manufacturing or disposal of a car
+
+##### Question 2: How would you get them?
+1. International Energy Agency and other institutions
+1. Scientific papers
+1. Cooperation with service providers (for example map services)
 
 ### WEEK 10 - Task 6: App URL Redirection
 
+I learned to 
+1. get a domain and a web host provider
+2. sync your app to your domain URL
 
 ## Section 2: Emissions Methodology
 
